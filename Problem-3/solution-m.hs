@@ -20,7 +20,7 @@ isPrime n = go (sqrtRounded n) 2
 
 -- La lista de primos que usaremos
 listOfPrimes :: [Integer]
-listOfPrimes = [x | x <- [1 ..], isPrime x]
+listOfPrimes = [x | x <- 2 : [3, 5 ..], isPrime x]
 
 largestPrimeFactor :: Integer -> [Integer] -> Integer
 largestPrimeFactor n [] = 0 -- Solo sirve para completar patrones, al final de cuentas la lista de primos es infinita
