@@ -14,4 +14,4 @@ result = maximum listPalindromes
 
 
 -- Se puede mejorar, se debe buscar una forma de ordenar el orden en que tomamos 2 números
--- para multiplicarlos, con esa orden solo bastaría usar fla funcion head
+-- para multiplicarlos, con esa orden solo bastaría usar la funcion head

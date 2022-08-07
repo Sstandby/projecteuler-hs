@@ -1,5 +1,3 @@
-
-
 -- Función que nos dice si un número es primo
 isPrime :: Integer -> Bool
 isPrime 1 = False
