@@ -16,5 +16,3 @@ result = go 0 fibListEven
         go n (x:xs)
             | x < 4000000 = go (n + x) xs
             | otherwise = n
-
-
