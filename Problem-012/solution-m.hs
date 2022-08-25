@@ -1,8 +1,6 @@
 -- Lista infinita de números triangulares
 triangularNumbers :: [Integer]
-triangularNumbers = go 1 2
-    where
-        go a index = a : go (a + index) (index + 1)
+triangularNumbers = scanl1 (+) [1 ..]
 
 -- Lista infinita de números primos
 sieve :: [Integer] -> [Integer]
@@ -11,7 +9,6 @@ sieve (p:xs) = p : sieve [x | x <- xs, mod x p > 0]
 
 primes :: [Integer]
 primes = sieve [2 ..]
-
 
 -- Mayor exponente de un factor primo de un número
 maxExponent :: (Integral t, Num p) => t -> t -> p
@@ -40,5 +37,3 @@ firstNumWithAmountOfFactors n = head [x | x <- triangularNumbers, numFactors x >
 -- Respuesta
 result :: Integer
 result = firstNumWithAmountOfFactors 500
-
-

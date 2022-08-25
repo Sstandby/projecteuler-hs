@@ -3,7 +3,7 @@
 -- usaremos esa funcion de forma recursiva para hallar el mcm de todos los números
 
 smallesMultiple :: [Integer] -> Integer
-smallesMultiple [] = 0
+smallesMultiple [] = error "Lista Vacía"
 smallesMultiple [x] = x
 smallesMultiple (x:xs) = lcm x (smallesMultiple xs)
 
